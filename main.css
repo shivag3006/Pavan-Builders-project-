@@ -1,0 +1,112 @@
+body {
+	font-family:Playfair Display;
+    font-size: 20px;
+	padding-top: 10px;
+	background-color:#C0C0C0   ;
+}
+
+.card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.card-img-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  //background: rgba(255,255,255,0.3);
+  opacity: 0;
+  transition: opacity .60s;
+}
+.card-img-wrap img {
+  transition: transform .60s;
+  width: 100%;
+}
+.card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card-img-wrap:hover:after {
+  opacity: 1;
+}
+.imagetext {
+  position: relative;
+  text-align: center;
+  color: #fff5b3;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imagetext .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: #fff5b3;
+  width: 90%;
+  height:20%;
+  padding: 10px;
+}
+
+img {
+height:auto;
+width:auto;
+}
+
+card_title_color {
+background-color:#ffffff;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
+
+.headings{
+    font-size: 20px;
+    font-weight: bold;
+    color:#fff5b3;
+    background-color: #2E4053;
+}
+.circle {
+    border: 3px solid #2E4053;
+    background-color: #D4E6F1;
+    height: 150px;
+    border-radius:90px;
+    width: 220px;
+    margin-top:10px;
+    text-align:center;
+}
+
+
+
